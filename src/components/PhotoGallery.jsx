@@ -12,7 +12,7 @@ function PhotoGallery() {
   useEffect(() => {
     axios
       .get(
-        `https://api.nasa.gov/mars-photos/api/v1/rovers/${roverName}/photos?sol=3&api_key=${apiKey}`
+        `https://api.nasa.gov/mars-photos/api/v1/rovers/${roverName}/photos?sol=3786&api_key=${apiKey}`
       )
       .then((response) => {
         // Filtrar apenas as fotos com URLs válidas para imagens
