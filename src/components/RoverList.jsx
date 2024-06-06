@@ -6,6 +6,7 @@ const apiKey = "UkP62SGqoKArEczPmbVIu5O4S7HNiUcGV7VDOyaF";
 
 function RoverList() {
   const [rovers, setRovers] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchRoverData = async (roverName) => {
@@ -21,26 +22,36 @@ function RoverList() {
     };
 
     const fetchRoversWithDelay = async () => {
-      for (const roverName of ["curiosity", "opportunity", "spirit"]) {
+      const roverNames = ["curiosity", "opportunity", "spirit"];
+      const fetchedRovers = [];
+
+      for (const roverName of roverNames) {
         const roverData = await fetchRoverData(roverName);
-        setRovers((prevRovers) => [...prevRovers, roverData].filter(Boolean));
-        await new Promise((resolve) => setTimeout(resolve, 1000)); // Atraso de 1 segundo
+        fetchedRovers.push(roverData);
+        await new Promise((resolve) => setTimeout(resolve, 1000));
       }
+
+      setRovers(fetchedRovers.filter(Boolean));
     };
 
-    fetchRoversWithDelay();
+    fetchRoversWithDelay().finally(() => setLoading(false));
   }, []);
 
   return (
     <div className="container mt-5">
       <h1 className="text-center mb-4">Rovers em Marte</h1>
-      <div className="row">
-        {rovers.map((rover) => (
-          <div key={rover.name} className="col-md-4 mb-4">
-            <Rover rover={rover} />
-          </div>
-        ))}
-      </div>
+
+      {loading ? (
+        <p className="text-center">Carregando dados dos rovers...</p>
+      ) : (
+        <div className="row">
+          {rovers.map((rover) => (
+            <div key={rover.name} className="col-md-4 mb-4">
+              <Rover rover={rover} />
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
