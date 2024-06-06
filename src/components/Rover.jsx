@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Rover({ rover }) {
   return (
@@ -15,6 +16,11 @@ function Rover({ rover }) {
           <strong>Total de fotos</strong> {rover.total_photos}
           {/* Adicione mais informações relevantes aqui */}
         </p>
+      </div>
+      <div className="card-footer">
+        <Link to={`/rover/${rover.name}`} className="btn btn-primary">
+          Ver Fotos
+        </Link>
       </div>
     </div>
   );
