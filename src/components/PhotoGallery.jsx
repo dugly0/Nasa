@@ -33,7 +33,7 @@ function PhotoGallery() {
 
   const handlePhotoClick = (photo, event) => {
     const photoRect = event.target.getBoundingClientRect();
-    const modalX = photoRect.left + window.scrollX ; // Coordenada X
+    const modalX = photoRect.left + window.scrollX; // Coordenada X
     const modalY = photoRect.top + window.scrollY; // Coordenada Y
 
     setSelectedPhoto({ ...photo, x: modalX, y: modalY });
@@ -51,7 +51,7 @@ function PhotoGallery() {
 
   return (
     <div className="container mt-5">
-      <h2>Fotos do Rover {roverName} (Sol 1)</h2>
+      <h2>Fotos do Rover {roverName} (Sol 3786)</h2>
       <div className="row">
         {currentPhotos.map((photo) => (
           <div key={photo.id} className="col-md-3 mb-4">
