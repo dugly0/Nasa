@@ -1,18 +1,15 @@
 import React from "react";
 
-function Photo({ photo }) {
+function Photo({ photo, onClick }) {
   return (
-    <div className="photo-container">
+    <div className="card" onClick={onClick}> 
       <img
         src={photo.img_src}
-        alt={photo.camera.full_name}
-        className="img-thumbnail"
+        className="card-img-top"
         style={{ width: "200px", height: "200px" }}
+        alt={`Rover ${photo.rover.name} - ${photo.camera.full_name}`}
+        onClick={onClick} 
       />
-      <div className="photo-info">
-        <p>Sol: {photo.sol}</p>
-        <p>Câmera: {photo.camera.name}</p>
-      </div>
     </div>
   );
 }
