@@ -6,7 +6,7 @@ function NavbarNASA() {
     return (
     <Navbar className="nav-custom mx-auto">
         <Container className="d-flex justify-content-center">
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="/">
                 <img
                     src={nasaLogo}
                     width="60"
