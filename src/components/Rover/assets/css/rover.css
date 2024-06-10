@@ -1,6 +1,6 @@
 /* rover.css */
 .card-container {
-    margin: 20px;
+    margin: 50px;
     padding: 10px;
     perspective: 1000px; /* Adiciona uma perspectiva para um efeito 3D */
   }
