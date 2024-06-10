@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Rover from "./Rover";
+import Rover from "./Rover/Rover";
 
 // Chave da API da NASA (substitua pelo seu valor real)
 // Essa chave é essencial para autenticar as requisições à API da NASA

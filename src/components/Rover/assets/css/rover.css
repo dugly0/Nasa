@@ -1,0 +1,75 @@
+/* rover.css */
+.card-container {
+    margin: 20px;
+    padding: 10px;
+    perspective: 1000px; /* Adiciona uma perspectiva para um efeito 3D */
+  }
+  
+  .card {
+    width: 300px;
+    height: 370px;
+    padding-top: 50px;
+    padding-left: 5px;
+    font-size: 15px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    overflow: hidden;
+    transform: skew(-10deg);
+    transition: transform 0.1s; /* Transição suave para o movimento */
+  }
+  
+  .card-content {
+    transform: skew(10deg); /* Desfaz a inclinação para manter o conteúdo reto */
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .card-spirit {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.6),  
+        rgba(0, 0, 0, 0.1)   
+      ),
+      url('../images/spirit.jpg');
+  }
+  
+  .card-opportunity {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.6),  
+        rgba(0, 0, 0, 0.1)   
+      ),
+      url('../images/oportunity.jpg');
+  }
+  
+  .card-curiosity {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.6),  
+        rgba(0, 0, 0, 0.1)   
+      ),
+      url('../images/curiosity.jpeg');
+  }
+  
+  .card-footer{
+    text-align: center;
+  }
+
+  .card-footer .btn {
+    background-color: transparent;
+    border-color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  .card-footer .btn:hover {
+    background-color: white;
+    color: black;
+    border-color: transparent;
+  }
+  
