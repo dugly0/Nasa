@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import Photo from "./Photo/Photo";
+import Photo from "./Photo";
 import Modal from "./Modal";
 
 // Chave da API da NASA
