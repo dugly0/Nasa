@@ -26,8 +26,8 @@
 
 .modal-info {
     position: absolute; /* Definindo posição absoluta para as informações */
-    top: -15%; /* Ajustando a posição vertical */
-    left: -3%; /* Ajustando a posição horizontal */
+    top: 1px; /* Ajustando a posição vertical */
+    left: 1px; /* Ajustando a posição horizontal */
     color: white; /* Definindo a cor do texto */
     background-color: rgba(0, 0, 0, 0.2); /* Adicionando fundo semitransparente */
     padding: 20px; /* Adicionando um pouco de espaço ao redor das informações */

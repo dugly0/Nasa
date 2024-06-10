@@ -1,3 +1,7 @@
+body{
+  background-color: rgb(0 0 0 / .02);
+}
+
 .modal {
   position: absolute; /* Posicionamento absoluto em relação à foto */
   z-index: 1; /* Garante que o modal fique acima de outros elementos */
@@ -11,17 +15,4 @@
   flex-direction: row; /* Alinha os elementos em linha (horizontal) */
 }
 
-.modal-info {
-  margin-top: 100px;
-  margin-left: 20px; /* Espaçamento entre a imagem e as informações */
-}
 
-.close {
-  /* ... outros estilos ... */
-  position: absolute; /* Posiciona o botão no canto superior direito */
-  top: -5px;
-  right: 0px;
-  color: red;
-  font-size: 25px;
-  cursor: pointer;
-}
