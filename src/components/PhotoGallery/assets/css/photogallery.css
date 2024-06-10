@@ -1,0 +1,22 @@
+.pagination{
+    margin: 10px;
+}
+
+.pagination span {
+    margin: 10px;
+    color: black;
+    font-weight: 400;
+}
+
+.pagination button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.pagination button:hover{
+    background-color: transparent;
+    color: black;
+    border-color: black;
+}

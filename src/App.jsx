@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import RoverList from "./components/RoverList";
-import PhotoGallery from "./components/PhotoGallery";
+import PhotoGallery from "./components/PhotoGallery/PhotoGallery";
 import Footer from "./components/Footer/Footer";
 
 

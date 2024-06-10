@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import Photo from "./Photo/Photo";
-import Modal from "./Modal/Modal";
+import "./assets/css/photogallery.css";
+import Photo from "../Photo/Photo";
+import Modal from "../Modal/Modal";
 
 // Chave da API da NASA
 const apiKey = "c5YgeeEB3PAyTU6rojZEg39t4mcWeHEZKJUD1dgy";
 
 // Número de fotos por página
-const photosPerPage = 25;
+const photosPerPage = 12;
 
 function PhotoGallery() {
   // Obtém o nome do rover da URL usando useParams
