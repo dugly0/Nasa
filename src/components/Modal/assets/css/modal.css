@@ -1,0 +1,53 @@
+.dialog-modal {
+    width: 50%;
+    padding: 0.1px;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dialog-modal::backdrop{
+    background-color: rgb(0 0 0 / .5);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#img-rover {
+    
+    width: 100%;
+    height: auto;
+}
+
+.modal-info {
+    position: absolute; /* Definindo posição absoluta para as informações */
+    top: -15%; /* Ajustando a posição vertical */
+    left: -3%; /* Ajustando a posição horizontal */
+    color: white; /* Definindo a cor do texto */
+    background-color: rgba(0, 0, 0, 0.2); /* Adicionando fundo semitransparente */
+    padding: 20px; /* Adicionando um pouco de espaço ao redor das informações */
+}
+
+.dialog-modal .close{
+    top: -5%;
+    color: red;
+    font-size: 90px;
+}
+
+@media screen and (max-width: 768px) {
+    .dialog-modal {
+        width: 90%; /* Reduzindo o tamanho do modal para telas menores */
+    }
+    
+    #img-rover {
+        max-width: 100%; /* Definindo a largura máxima da imagem */
+        height: auto; /* Altura automática para manter a proporção da imagem */
+    }
+}
+
+
