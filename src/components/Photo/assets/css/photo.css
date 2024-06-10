@@ -1,0 +1,13 @@
+.card {
+    background-color: rgb(233, 233, 233);
+}
+
+#card-foto {
+    margin: 50px;
+    padding: 0.1px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+}

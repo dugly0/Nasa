@@ -1,4 +1,5 @@
 import React from "react";
+import "./assets/css/modal.css"
 
 
 function Modal({ photo, onClose }) {
